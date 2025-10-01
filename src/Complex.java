@@ -1,3 +1,11 @@
+/**
+ * Complex class implements complex number calculations.
+ *
+ * @author pb-06
+ * @version 1.0
+ * @since 2025-10-01
+ */
+
 class Complex {
     double real;
     double imag;
@@ -10,6 +18,9 @@ class Complex {
     /**
      * Constructor receiving a complex number s string
      *
+     * @author pb-06
+     * @description Can contain math bugs.
+     * @since 2025-10-01
      * @param aStr "a+bi" formatted complex number
      */
 
@@ -24,6 +35,7 @@ class Complex {
 
         real = Double.parseDouble(split[0]);
 
+        // TODO - fix negative bugs: -1+2i, -3-34i
         String split2 = "";
         for (int i = 0; i < split[1].length()-1; i++) {
             split2 += split[1].charAt(i);
