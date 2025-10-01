@@ -61,6 +61,14 @@ public class Main {
                 break;
             }
             case '4' : {
+                System.out.print("z: ");
+                String zStr = input.nextLine();
+                Complex z = new Complex(zStr);
+
+                double abs = z.abs();
+
+                System.out.println("|" + z + "| = " + abs);
+
                 break;
             }
             case '5' : {

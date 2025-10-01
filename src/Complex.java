@@ -28,7 +28,7 @@ class Complex {
         for (int i = 0; i < split[1].length()-1; i++) {
             split2 += split[1].charAt(i);
         }
-        imag = Double.parseDouble(split[1]);
+        imag = Double.parseDouble(split2);
     }
 
     Complex add(Complex other) {
