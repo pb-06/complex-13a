@@ -7,8 +7,28 @@ class Complex {
         this.imag = imag;
     }
 
+    /**
+     * Constructor receiving a complex number s string
+     *
+     * @param aStr "a+bi" formatted complex number
+     */
+
     public Complex(String aStr) {
-        //implement
+        // "1+2i"
+        String[] split;
+        if (aStr.lastIndexOf("+") > aStr.lastIndexOf("-")) {
+            split = aStr.replace('+', 'P') .split("P");
+        } else {
+            split = aStr.split("-");
+        }
+
+        real = Double.parseDouble(split[0]);
+
+        String split2 = "";
+        for (int i = 0; i < split[1].length()-1; i++) {
+            split2 += split[1].charAt(i);
+        }
+        imag = Double.parseDouble(split[1]);
     }
 
     Complex add(Complex other) {
