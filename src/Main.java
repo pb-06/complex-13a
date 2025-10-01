@@ -46,6 +46,18 @@ public class Main {
                 break;
             }
             case '3' : {
+                System.out.print("a: ");
+                String aStr = input.nextLine();
+                Complex a = new Complex(aStr);
+                System.out.print("b: ");
+                String bStr = input.nextLine();
+                Complex b = new Complex(bStr);
+
+                Complex c = a;
+                c = c.multiply(b);
+
+                System.out.println(aStr + " * " + bStr + " = " + c);
+
                 break;
             }
             case '4' : {
