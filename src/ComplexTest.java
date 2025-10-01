@@ -14,7 +14,37 @@ public class ComplexTest {
     }
 
     @Test
-    public void testMain() {
+    public void testExit() {
+        Main.main(null);
+    }
+
+    @Test
+    public void testChoice1() {
+        Main.testChoice = '1';
+        Main.main(null);
+    }
+
+    @Test
+    public void testChoice2() {
+        Main.testChoice = '2';
+        Main.main(null);
+    }
+
+    @Test
+    public void testChoice3() {
+        Main.testChoice = '3';
+        Main.main(null);
+    }
+
+    @Test
+    public void testChoice4() {
+        Main.testChoice = '4';
+        Main.main(null);
+    }
+
+    @Test
+    public void testChoice5() {
+        Main.testChoice = '5';
         Main.main(null);
     }
 
