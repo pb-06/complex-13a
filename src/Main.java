@@ -72,6 +72,14 @@ public class Main {
                 break;
             }
             case '5' : {
+                System.out.print("z: ");
+                String zStr = input.nextLine();
+                Complex z = new Complex(zStr);
+
+                double arg = z.angle();
+
+                System.out.println("arg (" + z + ") = " + arg);
+
                 break;
             }
             case '0' : {
