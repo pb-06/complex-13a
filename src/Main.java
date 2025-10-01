@@ -27,12 +27,36 @@ public class Main {
                 c = c.add(b);
 
                 System.out.println(aStr + " + " + bStr + " = " + c);
+
+                break;
             }
-            case '2' : {}
-            case '3' : {}
-            case '4' : {}
-            case '5' : {}
-            case '0' : {}
+            case '2' : {
+                System.out.print("a: ");
+                String aStr = input.nextLine();
+                Complex a = new Complex(aStr);
+                System.out.print("b: ");
+                String bStr = input.nextLine();
+                Complex b = new Complex(bStr);
+
+                Complex c = a;
+                c = c.subtract(b);
+
+                System.out.println(aStr + " - " + bStr + " = " + c);
+
+                break;
+            }
+            case '3' : {
+                break;
+            }
+            case '4' : {
+                break;
+            }
+            case '5' : {
+                break;
+            }
+            case '0' : {
+                break;
+            }
             default: {}
         }
 
